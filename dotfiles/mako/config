@@ -1,0 +1,8 @@
+on-button-left=dismiss
+on-button-right=none
+font=sans 11
+default-timeout=3000
+max-visible=3
+border-color=#64727DFF
+background-color=#2B303BFF
+anchor=bottom-right

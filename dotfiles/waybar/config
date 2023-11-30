@@ -1,0 +1,68 @@
+[
+    {
+        "name": "bar",
+        "layer": "top",
+        "position": "bottom",
+        "height": 40,
+        "modules-left": ["memory", "cpu", "pulseaudio", "idle_inhibitor"],
+        "modules-center": ["sway/workspaces"],
+        "modules-right": ["tray","network#ethernet", "network#disconnected", "clock"],
+        "idle_inhibitor": {
+            "format": "{icon}",
+            "format-icons": {
+                "activated": "",
+                "deactivated": ""
+            }
+        },
+        "cpu": {
+            "format": " {usage}%",
+            "tooltip": false
+        },
+        "memory": {
+            "format": " {}%",
+            "tooltip": false
+        },
+        "pulseaudio": {
+            "tooltip": false,
+            "scroll-step": 5,
+            "format": "{icon} {volume}%{format_source}",
+            "format-bluetooth": "{icon} {volume}%{format_source}",
+            "format-bluetooth-muted": " {icon}{format_source}",
+            "format-muted": " {format_source}",
+            "format-source": "   {volume}%",
+            "format-source-muted": "  ",
+            "format-icons": {
+                "headphone": "",
+                "phone": "",
+                "portable": "",
+                "car": "",
+                "default": ["", "", ""]
+            }
+        },
+        "tray": {
+            "icon-size": 18,
+            "spacing": 10
+        },
+        "clock": {
+            "interval": 1,
+            "format": "{:%H:%M}",
+            "format-alt": "{:%Y-%m-%d}",
+            "tooltip-format": "<tt><big>{calendar}</big></tt>"
+        },
+        "network#disconnected": {
+            "tooltip-format": "No connection",
+            "format-ethernet": "",
+            "format-wifi": "",
+            "format-linked": "",
+            "format-disconnected": ""
+        },
+        "network#ethernet": {
+            "interface": "enp*",
+            "format-ethernet": "",
+            "format-wifi": "",
+            "format-linked": "",
+            "format-disconnected": "",
+            "tooltip-format": "Connected"
+        }
+    }
+]
