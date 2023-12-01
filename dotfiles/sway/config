@@ -57,8 +57,7 @@ for_window [app_id="pavucontrol"] floating enable
     bindsym $mod+s exec $internet
     bindsym $mod+d exec $explorer
     bindsym $mod+Shift+n reload
-    bindsym $mod+Shift+m exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-
+    bindsym $mod+Shift+m exec wlogout
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+3 workspace number 3
