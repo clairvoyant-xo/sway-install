@@ -14,15 +14,15 @@
                 "deactivated": ""
             }
         },
-       	"sway/workspaces": {
-       		"persistent-workspaces": {
-        		"1": [],
-        		"2": [],
-        		"3": [],
-        		"4": [],
-       			"5": []
-    		}
-		},
+        "sway/workspaces": {
+            "persistent-workspaces": {
+                "1": [],
+                "2": [],
+                "3": [],
+                "4": [],
+                "5": []
+            }
+        },
         "cpu": {
             "format": " {usage}%",
             "tooltip": false
