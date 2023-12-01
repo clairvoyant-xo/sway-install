@@ -5,4 +5,3 @@ paru -S --needed mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-dr
 mkdir -p ~/.config
 cd ..
 cp -r ./dotfiles/* ~/.config
-https://aur.archlinux.org/paru.git
