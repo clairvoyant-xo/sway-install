@@ -15,7 +15,6 @@ output DP-1 resolution 1920x1080@144Hz position 0,0
 # Startup
 
 exec gammastep -l 55.1:42.3 -g 0.75 -t 6500:6500 -m wayland
-exec swaybg -i /mnt/media/-/Wallpaper.jpg
 exec swayidle -w \
          timeout 600 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
@@ -48,7 +47,7 @@ for_window [app_id="pavucontrol"] floating enable
 
 # Shortcuts
 
-    floating_modifier $mod normal
+    floating_modifier none
 
     bindsym $mod+o exec $term
     bindsym $mod+p exec $menu
@@ -58,6 +57,7 @@ for_window [app_id="pavucontrol"] floating enable
     bindsym $mod+d exec $explorer
     bindsym $mod+Shift+n reload
     bindsym $mod+Shift+m exec wlogout
+
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
     bindsym $mod+3 workspace number 3
@@ -85,14 +85,19 @@ for_window [app_id="pavucontrol"] floating enable
         $mod+button5 workspace next
     }
 
+    bindsym --border button3 kill
+	
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym $mod+XF86AudioMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+	bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
     bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
-    
+    bindsym XF86AudioStop exec playerctl stop
+
 # Enabling Waybar
 
 bar {
