@@ -36,6 +36,7 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 client.focused "#4a5263" "#4a5263" "#ffffff" "#4a5263" "#4a5263"
 client.unfocused "#4a5263" "#4a5263" "#ffffff" "#4a5263" "#4a5263"
+client.urgent "#6baee8" "#6baee8" "#ffffff" "#6baee8" "#6baee8"
 font sans 11
 gaps inner 5
 gaps outer 20
