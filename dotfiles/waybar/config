@@ -62,7 +62,8 @@
                 "car": "",
                 "default": ["", "", ""]
             },
-            "on-click": "pavucontrol"
+            "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+            "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"           
         },
         "tray": {
             "icon-size": 18,
