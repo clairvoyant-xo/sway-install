@@ -45,8 +45,6 @@ smart_gaps on
 
 # Shortcuts
 
-    floating_modifier none
-
     bindsym $mod+o exec $term
     bindsym $mod+p exec $menu
     bindsym $mod+q kill
