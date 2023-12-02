@@ -78,10 +78,8 @@ assign [app_id="firefox"] 1
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
 
-    bindsym --whole-window {
-        $mod+button4 workspace prev
-        $mod+button5 workspace next
-    }
+    bindsym $mod+tab workspace next_on_output 
+    bindsym $mod+Shift+tab workspace prev_on_output 
 
     bindsym --border button3 kill
 	
