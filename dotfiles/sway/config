@@ -16,10 +16,7 @@ output DP-1 resolution 1920x1080@144Hz position 0,0
 
 exec gammastep -l 55.1:42.3 -g 0.75 -t 6500:6500 -m wayland
 exec swaybg -i ~/.config/swaybg/Wallpaper.jpg
-exec swayidle -w \
-         timeout 600 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'swaylock -f -c 000000'
+exec swayidle -w
 exec mako
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
