@@ -43,6 +43,10 @@ gaps outer 20
 smart_borders on
 smart_gaps on
 
+# Window Rules
+
+assign [app_id="firefox"] 1
+
 # Shortcuts
 
     bindsym $mod+o exec $term
