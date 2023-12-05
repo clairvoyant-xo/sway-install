@@ -3,10 +3,10 @@ set $mod Mod1
 
 # Default apps
 
-set $term foot
+set $term kitty
 set $menu wofi --show drun
 set $internet firefox
-set $explorer pcmanfm
+set $explorer kitty ranger
 
 # Monitor settings
 
@@ -82,6 +82,11 @@ for_window [class=.*] inhibit_idle fullscreen
     bindsym $mod+Shift+8 move container to workspace number 8; workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9; workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10; workspace number 10
+
+    bindsym $mod+j focus left
+    bindsym $mod+k focus down
+    bindsym $mod+i focus up
+    bindsym $mod+l focus right
 
     bindsym $mod+Right workspace next_on_output 
     bindsym $mod+Left workspace prev_on_output
