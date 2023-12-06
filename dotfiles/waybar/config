@@ -16,7 +16,6 @@
         },
         "sway/workspaces": {
             "disable-scroll": true
-            }
         },
         "cpu": {
             "format": " {usage}%",
