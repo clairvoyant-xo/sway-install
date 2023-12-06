@@ -3,10 +3,10 @@ set $mod Mod1
 
 # Default apps
 
-set $term kitty
+set $term foot
 set $menu wofi --show drun
 set $internet firefox
-set $explorer kitty ranger
+set $explorer pcmanfm
 
 # Monitor settings
 
