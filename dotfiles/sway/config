@@ -6,7 +6,7 @@ set $mod Mod1
 set $term kitty
 set $menu wofi --show drun
 set $internet firefox
-set $explorer ranger
+set $explorer kitty ranger
 
 # Monitor settings
 
