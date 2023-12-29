@@ -3,7 +3,7 @@ Simple install script for installing Arch Linux with Sway WM. This is meant to b
 
 # Installation
 ```
-git clone https://github.com/clairvoyant-xo/sway_install
+git clone https://github.com/clairvoyant-xo/sway-install
 cd sway_install
 sudo chmod +x install.sh
 ./install.sh
